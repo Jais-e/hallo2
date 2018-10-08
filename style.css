@@ -32,7 +32,9 @@ height: 200px;
 .off {
   display: none;
 }
-
+.selected{
+  color: #fff;
+}
 .content{
   width: 100%;
 

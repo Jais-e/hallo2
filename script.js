@@ -5,55 +5,66 @@ var selectedCat3;
 
 $('#btn1').click(function(){
   selectedCat1 =1;
-  return false;
   console.log(selectedCat1);
+  return false;
 });
 $('#btn2').click(function(){
   selectedCat1 =2;
   console.log(selectedCat1);
+  return false;
 });
 $('#btn3').click(function(){
   selectedCat1 =3;
   console.log(selectedCat1);
+  return false;
 });
 $('#btn4').click(function(){
   selectedCat1 =4;
   console.log(selectedCat1);
+  return false;
 });
 
 
 $('#btn5').click(function(){
   selectedCat2 =1;
   console.log(selectedCat1);
+  return false;
 });
 $('#btn6').click(function(){
   selectedCat2 =2;
   console.log(selectedCat1);
+  return false;
 });
 $('#btn7').click(function(){
   selectedCat2 =3;
   console.log(selectedCat1);
+  return false;
 });
 $('#btn8').click(function(){
   selectedCat2 =4;
   console.log(selectedCat1);
+  return false;
 });
 
 $('#btn9').click(function(){
   selectedCat3 =1;
   console.log(selectedCat1);
+  return false;
 });
 $('#btn10').click(function(){
   selectedCat3 =2;
   console.log(selectedCat1);
+  return false;
 });
 $('#btn11').click(function(){
   selectedCat3 =3;
   console.log(selectedCat1);
+  return false;
 });
 $('#btn12').click(function(){
   selectedCat3 =4;
   console.log(selectedCat1);
+  return false;
 });
 
 // Dette er vores randomizer - P.t. kan den vælge tre tilfældige items ud og sætte dem ind i html'en. Vi skal udvide den lidt :-)
