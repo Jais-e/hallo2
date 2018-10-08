@@ -12,6 +12,10 @@ header{
   width: 100%;
   height: 450px;
 }
+ul{
+  display: none;
+  list-style: none;
+}
 .ramme{
   position: absolute;
   top:0;
@@ -51,6 +55,16 @@ height: 200px;
   z-index: 999;
   border: 1px solid black;
 
+}
+
+.dropdown{
+  position: absolute;
+  bottom: -60px;
+}
+.dropdown:hover ul {
+  display: block;
+  position: absolute;
+  bottom: -160px;
 }
 .slot-ramme{
   position: absolute;

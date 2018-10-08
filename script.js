@@ -1,48 +1,62 @@
-// Viser valgt kategori
-var selectedCat;
-$( "#cat1" )
-  .change(function() {
-    var str = "";
-    $( "#cat1 option:selected" ).each(function() {
-      str += $( this ).text() + " ";
-    });
-    $( "#title1" ).text( str + ' is selected') ;
-    selectedCat =$( "#cat1 option:selected" ).val();
-    console.log(str);
-    console.log(selectedCat);
-  });
+
+var selectedCat1;
+var selectedCat2;
+var selectedCat3;
+
+$('#btn1').click(function(){
+  selectedCat1 =1;
+  console.log('selectedCat1');
+});
+$('#btn2').click(function(){
+  selectedCat1 =2;
+  console.log('selectedCat1');
+});
+$('#btn3').click(function(){
+  selectedCat1 =3;
+  console.log('selectedCat1');
+});
+$('#btn4').click(function(){
+  selectedCat1 =4;
+  console.log('selectedCat1');
+});
 
 
-  $( "#cat2" )
-    .change(function() {
-      var str = "";
-      $( "#cat2 option:selected" ).each(function() {
-        str += $( this ).text() + " ";
-      });
-      $( "#title2" ).text( str + ' is selected') ;
-      selectedCat = $("#cat1 option:selected" ).val();
-      console.log(str);
-      console.log(selectedCat);
-    });
+$('#btn5').click(function(){
+  selectedCat2 =1;
+  console.log('selectedCat1');
+});
+$('#btn6').click(function(){
+  selectedCat2 =2;
+  console.log('selectedCat1');
+});
+$('#btn7').click(function(){
+  selectedCat2 =3;
+  console.log('selectedCat1');
+});
+$('#btn8').click(function(){
+  selectedCat2 =4;
+  console.log('selectedCat1');
+});
 
-  $( "#cat3" )
-      .change(function() {
-        var str = "";
-        $( "#cat3 option:selected" ).each(function() {
-          str += $( this ).text() + " ";
-        });
-        $( "#title3" ).text( str + ' is selected') ;
-        selectedCat = $("#cat1 option:selected" ).val();
-        console.log(str);
-        console.log(selectedCat);
-      });
-
-
-
+$('#btn9').click(function(){
+  selectedCat3 =1;
+  console.log('selectedCat1');
+});
+$('#btn10').click(function(){
+  selectedCat3 =2;
+  console.log('selectedCat1');
+});
+$('#btn11').click(function(){
+  selectedCat3 =3;
+  console.log('selectedCat1');
+});
+$('#btn12').click(function(){
+  selectedCat3 =4;
+  console.log('selectedCat1');
+});
 
 // Dette er vores randomizer - P.t. kan den vælge tre tilfældige items ud og sætte dem ind i html'en. Vi skal udvide den lidt :-)
 $('#randomize').click(function(){
-
   var food =
   [
   ["<img src='img/alibaba.jpg'/>", "<br/>Ali Baba<br/>", "Stop any person from Aarhus and ask about Ali Baba and they'll let you know how they serve the greatest drunk food in the city. Whether you want a slice of pizza or a kebab or a pita this is the place to go. <br> Vestergade 6B, 8000 Aarhus C"],
