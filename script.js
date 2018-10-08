@@ -1,11 +1,17 @@
 
 
 
-$(document).ready(function(){
-var images = ['img/logo-no-glow1.png', 'img/logo-no-glow2.png', 'img/logo-no-glow3.png', 'img/logo-no-glow4.png','img/logo-off-letter1.png','img/logo-off-letter2.png' ];
+var image = document.getElementById("logo");
+            var currentPos = 0;
+            var images = ['img/logo-all-glow.png', 'img/logo-no-glow1.png', 'img/logo-no-glow2.png','img/logo-no-glow3.png','img/logo-no-glow4.png', 'img/logo-off-letter1.png', 'img/logo-off-letter2.png' ]
 
-   $('<img class="animation" src="img"' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#logo');
-});
+            function change() {
+              
+
+                image.src = images[Math.floor(Math.random() * images.length)];
+            }
+
+            setInterval(change, 3000);
 
 var selectedCat1;
 var selectedCat2;
