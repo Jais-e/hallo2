@@ -1,1 +1,2 @@
-# hallo2
+# hallo
+App for Hallo hostel
