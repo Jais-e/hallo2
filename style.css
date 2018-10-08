@@ -26,8 +26,16 @@ ul{
   background: #222222;
 }
 .holder{
-height: 200px;
 
+}
+.holder p{
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
+  z-index: -1;
+}
+.adress{
+  text-align: center;
 }
 .off {
   display: none;
@@ -53,7 +61,7 @@ height: 200px;
   position: relative;
   margin: 0 10px 50px 10px;
   flex-basis: 260px;
-  min-height: 370px;
+  min-height: 430px;
   z-index: 999;
   border: 1px solid black;
 
@@ -70,9 +78,14 @@ height: 200px;
 }
 .slot-ramme{
   position: absolute;
-  top:0;
+  top:-1;
   left: 0;
   width: 260px;
+  z-index: 99999999999;
+}
+.slot-ramme img{
+  max-width: 260px;
+  height: auto;
 }
 #description{
 

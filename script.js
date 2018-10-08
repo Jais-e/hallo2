@@ -71,31 +71,31 @@ $('#btn12').click(function(){
 $('#randomize').click(function(){
   var food =
   [
-  ["<img src='img/alibaba.jpg'/>", "<br/>Ali Baba<br/>", "Stop any person from Aarhus and ask about Ali Baba and they'll let you know how they serve the greatest drunk food in the city. Whether you want a slice of pizza or a kebab or a pita this is the place to go. <br> Vestergade 6B, 8000 Aarhus C"],
-  ["<img src='img/kowloon.jpg'/>", "<br/>Kowloon<br/>", "Beskrivelse2"],
-  ["<img src='img/pitacorner.jpg'/>", "<br/>Pita corner<br/>", "If you go to the corner of Vesterbro Torv where Pita Corner is located on a friday night you will find a line of people going from the small shop to the street but don't let that intimidate you. Pita Corner serves the greatest Pita in Aarhus and you don't want to miss out. <br> Vesterbro Torv 17, 8000 Aarhus C"],
-  ["<img src='img/siamsushi.jpg'/>", "<br/>A+ Siam Sushi<br/>", "Beskrivelse4"]
+  ["<img src='img/alibaba.jpg'/>", "<h3>Ali Baba<br/>", "<p>Stop any person from Aarhus and ask about Ali Baba and they'll let you know how they serve the greatest drunk food in the city. Whether you want a slice of pizza or a kebab or a pita this is the place to go. <br></p><span class='adress'>Vestergade 6B<br/>8000 Aarhus C</span>"],
+  ["<img src='img/kowloon.jpg'/>", "<h3>Kowloon</h3>", "<p>Beskrivelse2</p>"],
+  ["<img src='img/pitacorner.jpg'/>", "<h3>Pita corner</h3>", "<p>If you go to the corner of Vesterbro Torv where Pita Corner is located on a friday night you will find a line of people going from the small shop to the street but don't let that intimidate you. Pita Corner serves the greatest Pita in Aarhus and you don't want to miss out. <br></p><span class='adress'>Vesterbro Torv 17<br/>8000 Aarhus C</span>"],
+  ["<img src='img/siamsushi.jpg'/>", "<h3>A+ Siam Sushi</h3>", "<p>Beskrivelse4</p>"]
   ];
   var bars =
     [
-  ["<img src='img/fattereskil.jpg'/>", "<br/>Fatter Eskil<br/>", "Beskrivelse1"],
-  ["<img src='img/gbar.jpg'/>", "<br/>G-Bar<br/>", "Beskrivelse2"],
-  ["<img src='img/oldirish.jpg'/>", "<br/>Old Irish<br/>", "Beskrivelse3"],
-  ["<img src='img/bodegaen.jpg'/>", "<br/>Bodegaen<br/>", "If you want to feel like a true local go to Bodegaen and order a 'Aarhus sæt' (a local Ceres beer and a shot)."]
+  ["<img src='img/fattereskil.jpg'/>", "<h3>Fatter Eskil</h3>", "<p>Beskrivelse1</p>"],
+  ["<img src='img/gbar.jpg'/>", "<h3>G-Bar</h3>", "<p>Beskrivelse2</p>"],
+  ["<img src='img/oldirish.jpg'/>", "<h3>Old Irish</h3>", "<p>Beskrivelse3</p>"],
+  ["<img src='img/bodegaen.jpg'/>", "<h3>Bodegaen</h3>", "<p>If you want to feel like a true local go to Bodegaen and order a 'Aarhus sæt' (a local Ceres beer and a shot).</p>"]
   ];
   var cult =
     [
-  ["<img src='img/steno.jpg'/>", "<br/>Steno Museet<br/>", "Beskrivelse1"],
-  ["<img src='img/kunsthal.jpg'/>", "<br/>Kunsthal Aarhus<br/>", "Beskrivelse2"],
-  ["<img src='img/kvindemuseet.jpg'/>", "<br/>Kvindemuseet<br/>", "Beskrivelse3"],
-  ["<img src='img/marselisborg.jpg'/>", "<br/>Marseillesborg slot<br/>", "Beskrivelse4"]
+  ["<img src='img/steno.jpg'/>", "<h3>Steno Museet</h3>", "<p>Beskrivelse1</p>"],
+  ["<img src='img/kunsthal.jpg'/>", "<h3>Kunsthal Aarhus</h3>", "<p>Beskrivelse2</p>"],
+  ["<img src='img/kvindemuseet.jpg'/>", "<h3>Kvindemuseet</h3>", "<p>Beskrivelse3</p>"],
+  ["<img src='img/marselisborg.jpg'/>", "<h3>Marseillesborg slot</h3>", "<p>Beskrivelse4</p>"]
   ];
   var activity =
     [
-  ["<img src='img/ohaven.jpg'/>", "<br/>Ø-Haven<br/>", "Ø-haven is Denmark's biggest city garden with one of the most beautiful views. It is open to the public but the produce of the garden is reserved for the city farmers so enjoy the garden with your eyes and nose only. <br> Helga Pedersens gade, 8000 Aarhus C"],
-  ["<img src='img/eventhall.jpg'/>", "<br/>Eventhall<br/>", "Eventhall is the greatest playground for adults in Aarhus. Try inflatable activities such as bungeebasket, gladiator fights and mega foosball or go outside to try a game of paintball.<br> Øster Parkvej 2, 8270 Højbjerg"],
-  ["<img src='img/dyrehaven.jpg'/>", "<br/>Dyrehaven<br/>", "In Dyrehaven you can meet deers up close and feed them carrots or apples. You can also see wild boar through a fence and talk a walk along the beach nearby. Keep in mind the animals are wild, not pets. <br> Ørneredevej 6, 8270 Højbjerg"],
-  ["<img src='img/boulders.jpg'/>", "<br/>Aarhus Boulders<br/>", "In bouldering you climb up to 4.5 meters high walls with no harness or other equipment. Aarhus Boulders is for everyone - whether you've climbed a hundred times or never before. <br> Graham Bells vej 18A, 8200 Aarhus N"]
+  ["<img src='img/ohaven.jpg'/>", "<h3>Ø-Haven</h3>", "<p>Ø-haven is Denmark's biggest city garden with one of the most beautiful views. It is open to the public but the produce of the garden is reserved for the city farmers so enjoy the garden with your eyes and nose only. <br></p><span class='adress'>Helga Pedersens gade<br/>8000 Aarhus C</span>"],
+  ["<img src='img/eventhall.jpg'/>", "<h3>Eventhall</h3>", "<p>Eventhall is the greatest playground for adults in Aarhus. Try inflatable activities such as bungeebasket, gladiator fights and mega foosball or go outside to try a game of paintball.<br></p><span class='adress'>Øster Parkvej 2<br/>8270 Højbjerg</span>"],
+  ["<img src='img/dyrehaven.jpg'/>", "<h3>Dyrehaven</h3>", "<p>In Dyrehaven you can meet deers up close and feed them carrots or apples. You can also see wild boar through a fence and talk a walk along the beach nearby. Keep in mind the animals are wild, not pets. <br></p><span class='adress'>Ørneredevej 6<br/>8270 Højbjerg</span>"],
+  ["<img src='img/boulders.jpg'/>", "<h3>Aarhus Boulders</h3>", "<p>In bouldering you climb up to 4.5 meters high walls with no harness or other equipment. Aarhus Boulders is for everyone - whether you've climbed a hundred times or never before. <br></p><span class='adress'>Graham Bells vej 18A<br/>8200 Aarhus N</span>"]
   ];
 
 
@@ -118,10 +118,7 @@ $('#randomize').click(function(){
     console.log(randName);
   }
 
-<<<<<<< HEAD
-  // Hvis Culture kategori er valgt i slot1, 2 og 3
-  if (selectedCat1 == 3 && selectedCat2 == 3 && selectedCat3 == 3){
-=======
+
   // Hvis food kategori er valgt i slot1, 2 og 3
   if (selectedCat1 == 2 && selectedCat2 == 2 && selectedCat3 == 2){
 
@@ -129,6 +126,22 @@ $('#randomize').click(function(){
     do {
       randName[randName.length] = food.splice(
                                     Math.floor(Math.random() * food.length)
+                                  , 1)[0];
+    } while (randName.length < 3);
+  $('#one').html(randName[0]);
+  $('#two').html(randName[1]);
+  $('#three').html(randName[2]);
+  $('select').hide();
+  $('.selected').hide();
+    console.log(randName);
+  }
+  // Hvis Culture kategori er valgt i slot1, 2 og 3
+  if (selectedCat1 == 3 && selectedCat2 == 3 && selectedCat3 == 3){
+
+    var randName = [];
+    do {
+      randName[randName.length] = cult.splice(
+                                    Math.floor(Math.random() * cult.length)
                                   , 1)[0];
     } while (randName.length < 3);
   $('#one').html(randName[0]);
@@ -156,21 +169,6 @@ $('#randomize').click(function(){
     console.log(randName);
   }
 
->>>>>>> 16fcc9f806b6c270d1d2de01adf091eea8b4b038
-
-    var randName = [];
-    do {
-      randName[randName.length] = cult.splice(
-                                    Math.floor(Math.random() * cult.length)
-                                  , 1)[0];
-    } while (randName.length < 3);
-  $('#one').html(randName[0]);
-  $('#two').html(randName[1]);
-  $('#three').html(randName[2]);
-  $('select').hide();
-  $('.selected').hide();
-    console.log(randName);
-  }
 
 // SLOT1
 
