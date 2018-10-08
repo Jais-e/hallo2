@@ -5,54 +5,55 @@ var selectedCat3;
 
 $('#btn1').click(function(){
   selectedCat1 =1;
-  console.log('selectedCat1');
+  return false;
+  console.log(selectedCat1);
 });
 $('#btn2').click(function(){
   selectedCat1 =2;
-  console.log('selectedCat1');
+  console.log(selectedCat1);
 });
 $('#btn3').click(function(){
   selectedCat1 =3;
-  console.log('selectedCat1');
+  console.log(selectedCat1);
 });
 $('#btn4').click(function(){
   selectedCat1 =4;
-  console.log('selectedCat1');
+  console.log(selectedCat1);
 });
 
 
 $('#btn5').click(function(){
   selectedCat2 =1;
-  console.log('selectedCat1');
+  console.log(selectedCat1);
 });
 $('#btn6').click(function(){
   selectedCat2 =2;
-  console.log('selectedCat1');
+  console.log(selectedCat1);
 });
 $('#btn7').click(function(){
   selectedCat2 =3;
-  console.log('selectedCat1');
+  console.log(selectedCat1);
 });
 $('#btn8').click(function(){
   selectedCat2 =4;
-  console.log('selectedCat1');
+  console.log(selectedCat1);
 });
 
 $('#btn9').click(function(){
   selectedCat3 =1;
-  console.log('selectedCat1');
+  console.log(selectedCat1);
 });
 $('#btn10').click(function(){
   selectedCat3 =2;
-  console.log('selectedCat1');
+  console.log(selectedCat1);
 });
 $('#btn11').click(function(){
   selectedCat3 =3;
-  console.log('selectedCat1');
+  console.log(selectedCat1);
 });
 $('#btn12').click(function(){
   selectedCat3 =4;
-  console.log('selectedCat1');
+  console.log(selectedCat1);
 });
 
 // Dette er vores randomizer - P.t. kan den vælge tre tilfældige items ud og sætte dem ind i html'en. Vi skal udvide den lidt :-)
@@ -94,7 +95,7 @@ $('#randomize').click(function(){
 
 
 // Hvis bar kategori er valgt
-if (selectedCat == 'bar-cat'){
+if (selectedCat1 == 1 ){
 
   var randName = [];
   do {
@@ -103,13 +104,14 @@ if (selectedCat == 'bar-cat'){
                                 , 1)[0];
   } while (randName.length < 3);
 $('#one').html(randName[0]);
+
 $('select').hide();
 $('.selected').hide();
   console.log(randName);
 }
 
 // Hvis food kategori er valgt
-if (selectedCat == 'food-cat'){
+if (selectedCat1 == 2){
 
   var randName = [];
   do {
@@ -118,13 +120,14 @@ if (selectedCat == 'food-cat'){
                                 , 1)[0];
   } while (randName.length < 3);
 $('#one').html(randName[0]);
+
 $('select').hide();
 $('.selected').hide();
   console.log(randName);
 }
 
 // Hvis culture kategori er valgt
-if (selectedCat == 'cult-cat'){
+if (selectedCat1 == 3){
 
   var randName = [];
   do {
@@ -138,7 +141,7 @@ $('.selected').hide();
   console.log(randName);
 }
 // Hvis activity kategori er valgt
-if (selectedCat == 'act-cat'){
+if (selectedCat1 == 4){
 
   var randName = [];
   do {

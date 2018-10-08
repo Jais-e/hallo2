@@ -64,7 +64,7 @@ height: 200px;
 .dropdown:hover ul {
   display: block;
   position: absolute;
-  bottom: -160px;
+  bottom: -60px;
 }
 .slot-ramme{
   position: absolute;
