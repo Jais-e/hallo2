@@ -1,4 +1,12 @@
 
+
+
+$(document).ready(function(){
+var images = ['img/logo-no-glow1.png', 'img/logo-no-glow2.png', 'img/logo-no-glow3.png', 'img/logo-no-glow4.png','img/logo-off-letter1.png','img/logo-off-letter2.png' ];
+
+   $('<img class="animation" src="img"' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#logo');
+});
+
 var selectedCat1;
 var selectedCat2;
 var selectedCat3;

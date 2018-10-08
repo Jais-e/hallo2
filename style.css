@@ -16,6 +16,26 @@ ul{
   display: none;
   list-style: none;
 }
+.animation{
+  -webkit-animation: fade-in 2s ease;
+  -moz-animation: fade-in ease-in-out 2s both;
+  -ms-animation: fade-in ease-in-out 2s both;
+  -o-animation: fade-in ease-in-out 2s both;
+  animation: fade-in 2s ease;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+}
+@-webkit-keyframes animation{0%{opacity:0;} 100%{opacity:1;}}
+@-moz-keyframes animation{0%{opacity:0} 100%{opacity:1}}
+@-o-keyframes animation{0%{opacity:0} 100%{opacity:1}}
+@keyframes animation{0%{opacity:0} 100%{opacity:1}}
+#logo{
+  width: 711px;
+  margin-left: 184.5px;
+}
+#logo img{
+  max-width: 100%;
+}
 .ramme{
   position: absolute;
   top:0;
