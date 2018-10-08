@@ -118,7 +118,24 @@ $('#randomize').click(function(){
     console.log(randName);
   }
 
+  // Hvis Culture kategori er valgt i slot1, 2 og 3
+  if (selectedCat1 == 3 && selectedCat2 == 3 && selectedCat3 == 3){
 
+    var randName = [];
+    do {
+      randName[randName.length] = cult.splice(
+                                    Math.floor(Math.random() * cult.length)
+                                  , 1)[0];
+    } while (randName.length < 3);
+  $('#one').html(randName[0]);
+  $('#two').html(randName[1]);
+  $('#three').html(randName[2]);
+  $('select').hide();
+  $('.selected').hide();
+    console.log(randName);
+  }
+
+// SLOT1
 
 // Hvis bar kategori er valgt i slot1
 if (selectedCat1 == 1 ){
@@ -181,7 +198,7 @@ $('.selected').hide();
   console.log(randName);
 }
 
-
+// SLOT2
 
 // Hvis bar kategori er valgt i slot2
 if (selectedCat2 == 1 ){
@@ -244,7 +261,7 @@ $('.selected').hide();
   console.log(randName);
 }
 
-
+// SLOT3
 
 // Hvis bar kategori er valgt i slot3
 if (selectedCat3 == 1 ){
