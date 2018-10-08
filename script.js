@@ -94,7 +94,7 @@ $('#randomize').click(function(){
 
 
 
-// Hvis bar kategori er valgt
+// Hvis bar kategori er valgt i slot1
 if (selectedCat1 == 1 ){
 
   var randName = [];
@@ -110,7 +110,7 @@ $('.selected').hide();
   console.log(randName);
 }
 
-// Hvis food kategori er valgt
+// Hvis food kategori er valgt i slot1
 if (selectedCat1 == 2){
 
   var randName = [];
@@ -126,7 +126,7 @@ $('.selected').hide();
   console.log(randName);
 }
 
-// Hvis culture kategori er valgt
+// Hvis culture kategori er valgt i slot1
 if (selectedCat1 == 3){
 
   var randName = [];
