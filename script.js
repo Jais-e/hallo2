@@ -55,7 +55,7 @@ $('#randomize').click(function(){
   ["<img src='img/fattereskil.jpg'/>", "<br/>Fatter Eskil<br/>", "Beskrivelse1"],
   ["<img src='img/gbar.jpg'/>", "<br/>G-Bar<br/>", "Beskrivelse2"],
   ["<img src='img/oldirish.jpg'/>", "<br/>Old Irish<br/>", "Beskrivelse3"],
-  ["<img src='img/bodegaen.jpg'/>", "<br/>Bodegaen<br/>", "If you want to feel like a true local go to Bodegaen and order a "Aarhus sæt" (a local Ceres beer and a shot)."]
+  ["<img src='img/bodegaen.jpg'/>", "<br/>Bodegaen<br/>", "If you want to feel like a true local go to Bodegaen and order a 'Aarhus sæt' (a local Ceres beer and a shot)."]
   ];
   var cult =
     [
