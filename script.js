@@ -6,12 +6,12 @@ var image = document.getElementById("logo");
             var images = ['img/logo-all-glow.png', 'img/logo-no-glow1.png', 'img/logo-no-glow2.png','img/logo-no-glow3.png','img/logo-no-glow4.png', 'img/logo-off-letter1.png', 'img/logo-off-letter2.png' ]
 
             function change() {
-              
+
 
                 image.src = images[Math.floor(Math.random() * images.length)];
             }
 
-            setInterval(change, 3000);
+            setInterval(change, 1500);
 
 var selectedCat1;
 var selectedCat2;
