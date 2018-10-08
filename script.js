@@ -101,7 +101,22 @@ $('#randomize').click(function(){
 
 
 
+  // Hvis bar kategori er valgt i slot1, 2 og 3
+  if (selectedCat1 == 1 && selectedCat2 == 1 && selectedCat3 == 1){
 
+    var randName = [];
+    do {
+      randName[randName.length] = bars.splice(
+                                    Math.floor(Math.random() * bars.length)
+                                  , 1)[0];
+    } while (randName.length < 3);
+  $('#one').html(randName[0]);
+  $('#two').html(randName[1]);
+  $('#three').html(randName[2]);
+  $('select').hide();
+  $('.selected').hide();
+    console.log(randName);
+  }
 
 
 
