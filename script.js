@@ -151,7 +151,7 @@ $('select').hide();
 $('.selected').hide();
   console.log(randName);
 }
-// Hvis activity kategori er valgt
+// Hvis activity kategori er valgt i slot1
 if (selectedCat1 == 4){
 
   var randName = [];
@@ -165,8 +165,133 @@ $('select').hide();
 $('.selected').hide();
   console.log(randName);
 }
-});
 
+
+
+// Hvis bar kategori er valgt i slot2
+if (selectedCat2 == 1 ){
+
+  var randName = [];
+  do {
+    randName[randName.length] = bars.splice(
+                                  Math.floor(Math.random() * bars.length)
+                                , 1)[0];
+  } while (randName.length < 3);
+$('#two').html(randName[0]);
+
+$('select').hide();
+$('.selected').hide();
+  console.log(randName);
+}
+
+// Hvis food kategori er valgt i slot2
+if (selectedCat2 == 2){
+
+  var randName = [];
+  do {
+    randName[randName.length] = food.splice(
+                                  Math.floor(Math.random() * food.length)
+                                , 1)[0];
+  } while (randName.length < 3);
+$('#two').html(randName[0]);
+
+$('select').hide();
+$('.selected').hide();
+  console.log(randName);
+}
+
+// Hvis culture kategori er valgt i slot2
+if (selectedCat2 == 3){
+
+  var randName = [];
+  do {
+    randName[randName.length] = cult.splice(
+                                  Math.floor(Math.random() * cult.length)
+                                , 1)[0];
+  } while (randName.length < 3);
+$('#two').html(randName[0]);
+$('select').hide();
+$('.selected').hide();
+  console.log(randName);
+}
+// Hvis activity kategori er valgt i slot2
+if (selectedCat2 == 4){
+
+  var randName = [];
+  do {
+    randName[randName.length] = activity.splice(
+                                  Math.floor(Math.random() * activity.length)
+                                , 1)[0];
+  } while (randName.length < 3);
+$('#two').html(randName[0]);
+$('select').hide();
+$('.selected').hide();
+  console.log(randName);
+}
+
+
+
+// Hvis bar kategori er valgt i slot3
+if (selectedCat3 == 1 ){
+
+  var randName = [];
+  do {
+    randName[randName.length] = bars.splice(
+                                  Math.floor(Math.random() * bars.length)
+                                , 1)[0];
+  } while (randName.length < 3);
+$('#three').html(randName[0]);
+
+$('select').hide();
+$('.selected').hide();
+  console.log(randName);
+}
+
+// Hvis food kategori er valgt i slot3
+if (selectedCat3 == 2){
+
+  var randName = [];
+  do {
+    randName[randName.length] = food.splice(
+                                  Math.floor(Math.random() * food.length)
+                                , 1)[0];
+  } while (randName.length < 3);
+$('#three').html(randName[0]);
+
+$('select').hide();
+$('.selected').hide();
+  console.log(randName);
+}
+
+// Hvis culture kategori er valgt i slot3
+if (selectedCat3 == 3){
+
+  var randName = [];
+  do {
+    randName[randName.length] = cult.splice(
+                                  Math.floor(Math.random() * cult.length)
+                                , 1)[0];
+  } while (randName.length < 3);
+$('#three').html(randName[0]);
+$('select').hide();
+$('.selected').hide();
+  console.log(randName);
+}
+// Hvis activity kategori er valgt i slot3
+if (selectedCat3 == 4){
+
+  var randName = [];
+  do {
+    randName[randName.length] = activity.splice(
+                                  Math.floor(Math.random() * activity.length)
+                                , 1)[0];
+  } while (randName.length < 3);
+$('#three').html(randName[0]);
+$('select').hide();
+$('.selected').hide();
+  console.log(randName);
+}
+});
 
 //newsslider - gentagelse, hastighed og hurtig start
 
