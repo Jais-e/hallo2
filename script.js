@@ -374,6 +374,7 @@ $('.selected').hide();
 }
 });
 
+
 //newsslider - gentagelse, hastighed og hurtig start
 
 $('.marquee').marquee({

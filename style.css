@@ -112,15 +112,22 @@ ul{
   height: 800px;
 }
 /* Kategorivalg */
-.dropdown{
+.dropdown {
   position: absolute;
   bottom: -60px;
+  font-family: BeautySchoolDropoutII;
 }
+
 .dropdown:hover ul {
   display: block;
   position: absolute;
   bottom: -60px;
 }
+
+.dropdown a {text-decoration: none;
+color: #339999;
+text-shadow: 0 0 1px #00cccc;
+font-size: 20px;}
 
 
 
