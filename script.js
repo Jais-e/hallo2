@@ -118,8 +118,45 @@ $('#randomize').click(function(){
     console.log(randName);
   }
 
+<<<<<<< HEAD
   // Hvis Culture kategori er valgt i slot1, 2 og 3
   if (selectedCat1 == 3 && selectedCat2 == 3 && selectedCat3 == 3){
+=======
+  // Hvis food kategori er valgt i slot1, 2 og 3
+  if (selectedCat1 == 2 && selectedCat2 == 2 && selectedCat3 == 2){
+
+    var randName = [];
+    do {
+      randName[randName.length] = food.splice(
+                                    Math.floor(Math.random() * food.length)
+                                  , 1)[0];
+    } while (randName.length < 3);
+  $('#one').html(randName[0]);
+  $('#two').html(randName[1]);
+  $('#three').html(randName[2]);
+  $('select').hide();
+  $('.selected').hide();
+    console.log(randName);
+  }
+
+  // Hvis activity kategori er valgt i slot1, 2 og 3
+  if (selectedCat1 == 4 && selectedCat2 == 4 && selectedCat3 == 4){
+
+    var randName = [];
+    do {
+      randName[randName.length] = activity.splice(
+                                    Math.floor(Math.random() * activity.length)
+                                  , 1)[0];
+    } while (randName.length < 3);
+  $('#one').html(randName[0]);
+  $('#two').html(randName[1]);
+  $('#three').html(randName[2]);
+  $('select').hide();
+  $('.selected').hide();
+    console.log(randName);
+  }
+
+>>>>>>> 16fcc9f806b6c270d1d2de01adf091eea8b4b038
 
     var randName = [];
     do {
