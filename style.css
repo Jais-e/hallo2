@@ -1,44 +1,48 @@
-*{
+* {
   margin: 0;
 }
-body{
+
+body {
   width: 1080px;
   height: 1920px;
   margin: 0 auto;
   padding: 30px 30px 30px 30px;
   overflow-x: hidden;
 }
-header{
+
+header {
   position: relative;
   width: 100%;
   height: 450px;
 }
-ul{
-  display: none;
-  list-style: none;
-}
+
+
+
 .off {
   display: none;
 }
 
 /* Logo */
-#logo{
+#logo {
   width: 711px;
   margin-top: 60px;
   margin-left: 184.5px;
 }
-#logo img{
+
+#logo img {
   max-width: 100%;
 }
-#logo-ramme{
+
+#logo-ramme {
   position: absolute;
-  top:0;
+  top: 0;
   left: 118.5px;
 }
+
 /* Træramme*/
-.ramme{
+.ramme {
   position: absolute;
-  top:0;
+  top: 0;
   width: 1080px;
   height: 1920px;
   margin: 0 auto;
@@ -47,38 +51,40 @@ ul{
 }
 
 /* billede ig beskrivelser af steder */
-.holder{
+.holder {
   position: relative;
   height: 430px;
 }
-.holder p{
+
+.holder p {
   width: 90%;
   margin: 0 auto;
   text-align: justify;
   z-index: -1;
 }
-.holder h3{
+
+.holder h3 {
   margin-bottom: 5px;
 }
-.adress{
-  position: absolute;
-  width:80%;
-  bottom: 15px;
 
-  left:10%;
+.adress {
+  position: absolute;
+  width: 80%;
+  bottom: 15px;
+  left: 10%;
 }
 
-.selected{
+.selected {
   color: #fff;
 }
 
 /* Slots */
-.content{
+.content {
   width: 100%;
-
   height: 550px;
 }
-.slots{
+
+.slots {
   text-align: center;
   margin: 0 auto;
   width: 80%;
@@ -87,49 +93,63 @@ ul{
   justify-content: space-between;
   color: #fff;
 }
-.slot{
+
+.slot {
   position: relative;
   margin: 0 10px 50px 10px;
   flex-basis: 260px;
   min-height: 430px;
   z-index: 999;
   border: 1px solid black;
-
 }
-.slot-ramme{
+
+.slot-ramme {
   position: absolute;
-  top:-1px;
+  top: -1px;
   left: 0;
   width: 260px;
   z-index: 99999999999;
 }
-.slot-ramme img{
+
+.slot-ramme img {
   max-width: 260px;
   height: auto;
 }
-#description{
 
+#description {
   height: 800px;
 }
+
 /* Kategorivalg */
-.dropdown {
+#dropdown {
   position: absolute;
+  width: 260px;
   bottom: -60px;
   font-family: BeautySchoolDropoutII;
 }
-
-.dropdown:hover ul {
-  display: block;
+ul {
+  display: none;
+  list-style: none;
   position: absolute;
-  bottom: -60px;
+  bottom: -150px;
+  left: -40px;
+  width: 260px;
 }
 
-.dropdown a {text-decoration: none;
-color: #339999;
-text-shadow: 0 0 1px #00cccc;
-font-size: 20px;}
+/*.dropdown:hover ul {
+  width: 260px;
+  display: block;
+  position: absolute;
+  bottom: -100px;
+  left: -40px;
+}*/
 
-
+#dropdown a {
+  text-decoration: none;
+  color: #339999;
+  text-shadow: 0 0 1px #00cccc;
+  font-size: 30px;
+}
 
 /*newslider*/
 .marquee {
@@ -143,11 +163,10 @@ font-size: 20px;}
   color: #2eabb4;
   font-family: 'Codystar', cursive;
   font-weight: 800;
-
 }
 
 /* Randomize knap */
-#randomize{
+#randomize {
   border-radius: 5px;
   width: 150px;
   height: 70px;

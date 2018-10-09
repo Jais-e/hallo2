@@ -16,9 +16,21 @@ var image = document.getElementById("logo");
 var selectedCat1;
 var selectedCat2;
 var selectedCat3;
-
+function toggleMenu(){
+  document.getElementById('cat1').style.display ="block";
+  return false;
+}
+function toggleMenu2(){
+  document.getElementById('cat2').style.display ="block";
+  return false;
+}
+function toggleMenu3(){
+  document.getElementById('cat3').style.display ="block";
+  return false;
+}
 $('#btn1').click(function(){
   selectedCat1 =1;
+  $('#title1').html('<img src="img/beerlogo.png">');
   console.log(selectedCat1);
   return false;
 });
