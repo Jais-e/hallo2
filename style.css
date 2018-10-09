@@ -86,6 +86,7 @@ header {
 }
 
 .slots {
+  position: relative;
   text-align: center;
   margin: 0 auto;
   width: 80%;
@@ -231,7 +232,7 @@ ul {
 #randomize {
   position: absolute;
   bottom: -450px;
-  left: 640px;
+  left: 340px;
   border-radius: 5px;
   width: 150px;
   height: 70px;
