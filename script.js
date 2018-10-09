@@ -113,13 +113,66 @@ $('#btn12').click(function(){
   return false;
 });
 
+// Valg af video der afspilles i slots
+function playMovie(){
+  var slotMovie;
+  if (selectedCat1 == 1){
+    slotMovie = '<img src="img/bars2.gif"/>';
+    $('#one').html(slotMovie);
+  };
+  if (selectedCat1 == 2){
+    slotMovie = '<img src="img/foodslot.gif"/>';
+    $('#one').html(slotMovie);
+  };
+  if (selectedCat1 == 3){
+    slotMovie = '<img src="img/cultslot.gif"/>';
+    $('#one').html(slotMovie);
+  };
+  if (selectedCat1 == 4){
+    slotMovie = '<img src="img/actslot.gif"/>';
+    $('#one').html(slotMovie);
+  };
+  if (selectedCat2 == 1){
+    slotMovie = '<img src="img/bars2.gif"/>';
+    $('#two').html(slotMovie);
+  };
+  if (selectedCat2 == 2){
+    slotMovie = '<img src="img/foodslot.gif"/>';
+    $('#two').html(slotMovie);
+  };
+  if (selectedCat2 == 3){
+    slotMovie = '<img src="img/cultslot.gif"/>';
+    $('#two').html(slotMovie);
+  };
+  if (selectedCat2 == 4){
+    slotMovie = '<img src="img/actslot.gif"/>';
+    $('#two').html(slotMovie);
+  };
+  if (selectedCat3 == 1){
+    slotMovie = '<img src="img/bars2.gif"/>';
+    $('#three').html(slotMovie);
+  };
+  if (selectedCat3 == 2){
+    slotMovie = '<img src="img/foodslot.gif"/>';
+    $('#three').html(slotMovie);
+  };
+  if (selectedCat3 == 3){
+    slotMovie = '<img src="img/cultslot.gif"/>';
+    $('#three').html(slotMovie);
+  };
+  if (selectedCat3 == 4){
+    slotMovie = '<img src="img/actslot.gif"/>';
+    $('#three').html(slotMovie);
+  };
+};
 // Dette er vores randomizer
 $('#randomize').mouseover(function(){
-  $('#one').html('<img src="img/bars2.gif">');
+  playMovie();
 
 });
 $('#randomize').click(function(){
-
+  $('#one').html("");
+  $(this).unbind('mouseleave');
   var food =
   [
   ["<img src='img/alibaba.jpg'/>", "<h3>Ali Baba<br/>", "<p>Stop any person from Aarhus and ask about Ali Baba and they'll let you know how they serve the greatest drunk food in the city. Whether you want a slice of pizza or a kebab or a pita this is the place to go. <br></p><span class='adress'>Vestergade 6B<br/>8000 Aarhus C</span>"],
