@@ -13,10 +13,14 @@ var image = document.getElementById("logo");
 
             setInterval(change, 1500);
 
-// Dropdown menuer
+// Variabler
 var selectedCat1 =0;
 var selectedCat2 =0;
 var selectedCat3 =0;
+
+
+
+// Dropdown menuer
 
 $('#drop1').click(function(){
   $('#cat1').show();
@@ -115,53 +119,54 @@ $('#btn12').click(function(){
 
 // Valg af video der afspilles i slots
 function playMovie(){
+
   var slotMovie;
-  if (selectedCat1 == 1){
+  if (selectedCat1 == 1 && $('#chk1').prop('checked') != true){
     slotMovie = '<img src="img/bars2.gif"/>';
     $('#one').html(slotMovie);
   };
-  if (selectedCat1 == 2){
+  if (selectedCat1 == 2 && $('#chk1').prop('checked') != true){
     slotMovie = '<img src="img/foodslot.gif"/>';
     $('#one').html(slotMovie);
   };
-  if (selectedCat1 == 3){
+  if (selectedCat1 == 3 && $('#chk1').prop('checked') != true){
     slotMovie = '<img src="img/cultslot.gif"/>';
     $('#one').html(slotMovie);
   };
-  if (selectedCat1 == 4){
+  if (selectedCat1 == 4 && $('#chk1').prop('checked') != true){
     slotMovie = '<img src="img/actslot.gif"/>';
     $('#one').html(slotMovie);
   };
-  if (selectedCat2 == 1){
+  if (selectedCat2 == 1 && $('#chk2').prop('checked') != true){
     slotMovie = '<img src="img/bars2.gif"/>';
     setTimeout(function(){ $('#two').html(slotMovie); }, 200);
 
   };
-  if (selectedCat2 == 2){
+  if (selectedCat2 == 2 && $('#chk2').prop('checked') != true){
     slotMovie = '<img src="img/foodslot.gif"/>';
     setTimeout(function(){ $('#two').html(slotMovie); }, 200);
   };
-  if (selectedCat2 == 3){
+  if (selectedCat2 == 3 && $('#chk2').prop('checked') != true){
     slotMovie = '<img src="img/cultslot.gif"/>';
     setTimeout(function(){ $('#two').html(slotMovie); }, 200);
   };
-  if (selectedCat2 == 4){
+  if (selectedCat2 == 4 && $('#chk2').prop('checked') != true){
     slotMovie = '<img src="img/actslot.gif"/>';
     setTimeout(function(){ $('#two').html(slotMovie); }, 200);
   };
-  if (selectedCat3 == 1){
+  if (selectedCat3 == 1 && $('#chk3').prop('checked') != true){
     slotMovie = '<img src="img/bars2.gif"/>';
     setTimeout(function(){ $('#three').html(slotMovie); }, 400);
   };
-  if (selectedCat3 == 2){
+  if (selectedCat3 == 2 && $('#chk3').prop('checked') != true){
     slotMovie = '<img src="img/foodslot.gif"/>';
     setTimeout(function(){ $('#three').html(slotMovie); }, 400);
   };
-  if (selectedCat3 == 3){
+  if (selectedCat3 == 3 && $('#chk3').prop('checked') != true){
     slotMovie = '<img src="img/cultslot.gif"/>';
     setTimeout(function(){ $('#three').html(slotMovie); }, 400);
   };
-  if (selectedCat3 == 4){
+  if (selectedCat3 == 4 && $('#chk3').prop('checked') != true){
     slotMovie = '<img src="img/actslot.gif"/>';
     setTimeout(function(){ $('#three').html(slotMovie); }, 400);
   };
@@ -172,9 +177,9 @@ $('#randomize').mouseover(function(){
 
 });
 $('#randomize').click(function(){
-
-  setTimeout(function(){ $('#one').html(""); }, 400);
   $(this).unbind('mouseleave');
+
+  // Kategori arrays
   var food =
   [
   ["<img src='img/alibaba.jpg'/>", "<h3>Ali Baba<br/>", "<p>Stop any person from Aarhus and ask about Ali Baba and they'll let you know how they serve the greatest drunk food in the city. Whether you want a slice of pizza or a kebab or a pita this is the place to go. <br></p><span class='adress'>Vestergade 6B<br/>8000 Aarhus C</span>"],
@@ -206,7 +211,7 @@ $('#randomize').click(function(){
 
 
   // Hvis bar kategori er valgt i slot1, 2 og 3
-  if (selectedCat1 == 1 && selectedCat2 == 1 && selectedCat3 == 1){
+  if (selectedCat1 == 1 && selectedCat2 == 1 && selectedCat3 == 1 ){
     $('#drop1').hide();
     $('#drop2').hide();
     $('#drop3').hide();
@@ -309,7 +314,7 @@ $('#randomize').click(function(){
 // SLOT1
 
 // Hvis bar kategori er valgt i slot1
-if (selectedCat1 == 1 ){
+if (selectedCat1 == 1 && $('#chk1').prop('checked') != true){
   $('#drop1').hide();
   $('#chk1').show();
   $('#lbl1').show();
@@ -327,7 +332,7 @@ $('.selected').hide();
 }
 
 // Hvis food kategori er valgt i slot1
-if (selectedCat1 == 2 ){
+if (selectedCat1 == 2 && $('#chk1').prop('checked') != true){
   $('#drop1').hide();
   $('#chk1').show();
   $('#lbl1').show();
@@ -345,7 +350,7 @@ $('.selected').hide();
 }
 
 // Hvis culture kategori er valgt i slot1
-if (selectedCat1 == 3){
+if (selectedCat1 == 3 && $('#chk1').prop('checked') != true){
   $('#drop1').hide();
   $('#chk1').show();
   $('#lbl1').show();
@@ -361,7 +366,7 @@ $('.selected').hide();
   console.log(randName);
 }
 // Hvis activity kategori er valgt i slot1
-if (selectedCat1 == 4){
+if (selectedCat1 == 4 && $('#chk1').prop('checked') != true){
   $('#drop1').hide();
   $('#chk1').show();
   $('#lbl1').show();
@@ -380,7 +385,7 @@ $('.selected').hide();
 // SLOT2
 
 // Hvis bar kategori er valgt i slot2
-if (selectedCat2 == 1 ){
+if (selectedCat2 == 1 && $('#chk2').prop('checked') != true){
   $('#drop2').hide();
   $('#chk2').show();
   $('#lbl2').show();
@@ -398,7 +403,7 @@ $('.selected').hide();
 }
 
 // Hvis food kategori er valgt i slot2
-if (selectedCat2 == 2){
+if (selectedCat2 == 2 && $('#chk2').prop('checked') != true){
   $('#drop2').hide();
   $('#chk2').show();
   $('#lbl2').show();
@@ -416,7 +421,7 @@ $('.selected').hide();
 }
 
 // Hvis culture kategori er valgt i slot2
-if (selectedCat2 == 3){
+if (selectedCat2 == 3 && $('#chk2').prop('checked') != true){
   $('#drop2').hide();
   $('#chk2').show();
   $('#lbl2').show();
@@ -432,7 +437,7 @@ $('.selected').hide();
   console.log(randName);
 }
 // Hvis activity kategori er valgt i slot2
-if (selectedCat2 == 4){
+if (selectedCat2 == 4 && $('#chk2').prop('checked') != true){
   $('#drop2').hide();
   $('#chk2').show();
   $('#lbl2').show();
@@ -451,7 +456,7 @@ $('.selected').hide();
 // SLOT3
 
 // Hvis bar kategori er valgt i slot3
-if (selectedCat3 == 1 ){
+if (selectedCat3 == 1 && $('#chk3').prop('checked') != true){
   $('#drop3').hide();
   $('#chk3').show();
   $('#lbl3').show();
@@ -469,7 +474,7 @@ $('.selected').hide();
 }
 
 // Hvis food kategori er valgt i slot3
-if (selectedCat3 == 2){
+if (selectedCat3 == 2 && $('#chk3').prop('checked') != true){
 $('#drop3').hide();
 $('#chk3').show();
 $('#lbl3').show();
@@ -487,7 +492,7 @@ $('.selected').hide();
 }
 
 // Hvis culture kategori er valgt i slot3
-if (selectedCat3 == 3){
+if (selectedCat3 == 3 && $('#chk3').prop('checked') != true){
 $('#drop3').hide();
 $('#chk3').show();
 $('#lbl3').show();
@@ -503,7 +508,7 @@ $('.selected').hide();
   console.log(randName);
 }
 // Hvis activity kategori er valgt i slot3
-if (selectedCat3 == 4){
+if (selectedCat3 == 4 && $('#chk3').prop('checked') != true){
 $('#drop3').hide();
 $('#chk3').show();
 $('#lbl3').show();
