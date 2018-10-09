@@ -82,6 +82,7 @@ header {
 .content {
   width: 100%;
   height: 550px;
+  height: 830px;
 }
 
 .slots {
@@ -92,6 +93,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   color: #fff;
+
 }
 
 .slot {
@@ -115,7 +117,28 @@ header {
   max-width: 260px;
   height: auto;
 }
+label{
+  display: none;
+  position: absolute;
+  width: 260px;
+  bottom: -40px;
+  left: 0;
+  font-family: BeautySchoolDropout;
+  letter-spacing: 3px;
+  color: #339999;
+  text-shadow: 0 0 1px #00cccc;
+  font-size: 30px;
+}
+.checkbox{
+  display: none;
+  position: absolute;
+  border: 2px solid #339999;
+  width: 260px;
+  height: 30px;
+  bottom: -40px;
+  left: 50px;
 
+}
 #description {
   height: 800px;
 }
@@ -132,11 +155,47 @@ ul {
   display: none;
   list-style: none;
   position: absolute;
-  bottom: -150px;
+  bottom: -260px;
   left: -40px;
   width: 260px;
+  line-height: 60px;
 }
-
+#btn1{
+  background: url('img/topramme.png') no-repeat;
+}
+#btn2{
+  background: url('img/mellemknapper.png') no-repeat;
+}
+#btn3{
+  background: url('img/mellemknapper.png') no-repeat;
+}
+#btn4{
+  background: url('img/nederstknap.png') no-repeat;
+}
+#btn5{
+  background: url('img/topramme.png') no-repeat;
+}
+#btn6{
+  background: url('img/mellemknapper.png') no-repeat;
+}
+#btn7{
+  background: url('img/mellemknapper.png') no-repeat;
+}
+#btn8{
+  background: url('img/nederstknap.png') no-repeat;
+}
+#btn9{
+  background: url('img/topramme.png') no-repeat;
+}
+#btn10{
+  background: url('img/mellemknapper.png') no-repeat;
+}
+#btn11{
+  background: url('img/mellemknapper.png') no-repeat;
+}
+#btn12{
+  background: url('img/nederstknap.png') no-repeat;
+}
 /*.dropdown:hover ul {
   width: 260px;
   display: block;
@@ -157,7 +216,7 @@ ul {
 /*newslider*/
 .marquee {
   width: 90%;
-  margin: 0 auto;
+  margin: -300px auto;
   padding-top: 5px;
   overflow: hidden;
   background: rgba(255, 0, 0, 0);
@@ -170,11 +229,13 @@ ul {
 
 /* Randomize knap */
 #randomize {
+  position: absolute;
+  bottom: -450px;
+  left: 640px;
   border-radius: 5px;
   width: 150px;
   height: 70px;
   cursor: pointer;
-  margin: 200px auto;
   background-color: rgba(47, 215, 62, 0.78);
   color: #ffa304;
   z-index: 999999999;

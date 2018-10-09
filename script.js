@@ -1,6 +1,6 @@
 
 
-
+// Random header image
 var image = document.getElementById("logo");
             var currentPos = 0;
             var images = ['img/logo-on.png', 'img/logo-no-glow1.png', 'img/logo-no-glow2.png', 'img/logo-off-letter1.png', 'img/logo-off-letter2.png', 'img/logo-off5.png', 'img/logo-off6.png', 'img/logo-on1.png', ]
@@ -13,21 +13,11 @@ var image = document.getElementById("logo");
 
             setInterval(change, 1500);
 
-var selectedCat1;
-var selectedCat2;
-var selectedCat3;
-/*function toggleMenu(){
-  document.getElementById('cat1').classList.toggle("show");
-  return false;
-}
-function toggleMenu2(){
-  document.getElementById('cat2').classList.toggle("show");
-  return false;
-}
-function toggleMenu3(){
-  document.getElementById('cat3').classList.toggle("show");
-  return false;
-}*/
+// Dropdown menuer
+var selectedCat1 =0;
+var selectedCat2 =0;
+var selectedCat3 =0;
+
 $('#drop1').click(function(){
   $('#cat1').show();
 })
@@ -65,8 +55,6 @@ $('#btn4').click(function(){
   console.log(selectedCat1);
   return false;
 });
-
-
 $('#btn5').click(function(){
   $('#two').html('<img src="img/beerlogo1.png">');
   selectedCat2 =1;
@@ -125,8 +113,13 @@ $('#btn12').click(function(){
   return false;
 });
 
-// Dette er vores randomizer - P.t. kan den vælge tre tilfældige items ud og sætte dem ind i html'en. Vi skal udvide den lidt :-)
+// Dette er vores randomizer
+$('#randomize').mouseover(function(){
+  $('#one').html('<img src="img/bars.gif">');
+
+});
 $('#randomize').click(function(){
+
   var food =
   [
   ["<img src='img/alibaba.jpg'/>", "<h3>Ali Baba<br/>", "<p>Stop any person from Aarhus and ask about Ali Baba and they'll let you know how they serve the greatest drunk food in the city. Whether you want a slice of pizza or a kebab or a pita this is the place to go. <br></p><span class='adress'>Vestergade 6B<br/>8000 Aarhus C</span>"],
@@ -157,11 +150,17 @@ $('#randomize').click(function(){
   ];
 
 
-
-
   // Hvis bar kategori er valgt i slot1, 2 og 3
   if (selectedCat1 == 1 && selectedCat2 == 1 && selectedCat3 == 1){
-
+    $('#drop1').hide();
+    $('#drop2').hide();
+    $('#drop3').hide();
+    $('#chk1').show();
+    $('#chk2').show();
+    $('#chk3').show();
+    $('#lbl1').show();
+    $('#lbl2').show();
+    $('#lbl3').show();
     var randName = [];
     do {
       randName[randName.length] = bars.splice(
@@ -179,7 +178,15 @@ $('#randomize').click(function(){
 
   // Hvis food kategori er valgt i slot1, 2 og 3
   if (selectedCat1 == 2 && selectedCat2 == 2 && selectedCat3 == 2){
-
+    $('#drop1').hide();
+    $('#drop2').hide();
+    $('#drop3').hide();
+    $('#chk1').show();
+    $('#chk2').show();
+    $('#chk3').show();
+    $('#lbl1').show();
+    $('#lbl2').show();
+    $('#lbl3').show();
     var randName = [];
     do {
       randName[randName.length] = food.splice(
@@ -195,7 +202,15 @@ $('#randomize').click(function(){
   }
   // Hvis Culture kategori er valgt i slot1, 2 og 3
   if (selectedCat1 == 3 && selectedCat2 == 3 && selectedCat3 == 3){
-
+    $('#drop1').hide();
+    $('#drop2').hide();
+    $('#drop3').hide();
+    $('#chk1').show();
+    $('#chk2').show();
+    $('#chk3').show();
+    $('#lbl1').show();
+    $('#lbl2').show();
+    $('#lbl3').show();
     var randName = [];
     do {
       randName[randName.length] = cult.splice(
@@ -212,7 +227,15 @@ $('#randomize').click(function(){
 
   // Hvis activity kategori er valgt i slot1, 2 og 3
   if (selectedCat1 == 4 && selectedCat2 == 4 && selectedCat3 == 4){
-
+    $('#drop1').hide();
+    $('#drop2').hide();
+    $('#drop3').hide();
+    $('#chk1').show();
+    $('#chk2').show();
+    $('#chk3').show();
+    $('#lbl1').show();
+    $('#lbl2').show();
+    $('#lbl3').show();
     var randName = [];
     do {
       randName[randName.length] = activity.splice(
@@ -232,7 +255,9 @@ $('#randomize').click(function(){
 
 // Hvis bar kategori er valgt i slot1
 if (selectedCat1 == 1 ){
-
+  $('#drop1').hide();
+  $('#chk1').show();
+  $('#lbl1').show();
   var randName = [];
   do {
     randName[randName.length] = bars.splice(
@@ -247,8 +272,10 @@ $('.selected').hide();
 }
 
 // Hvis food kategori er valgt i slot1
-if (selectedCat1 == 2){
-
+if (selectedCat1 == 2 ){
+  $('#drop1').hide();
+  $('#chk1').show();
+  $('#lbl1').show();
   var randName = [];
   do {
     randName[randName.length] = food.splice(
@@ -264,7 +291,9 @@ $('.selected').hide();
 
 // Hvis culture kategori er valgt i slot1
 if (selectedCat1 == 3){
-
+  $('#drop1').hide();
+  $('#chk1').show();
+  $('#lbl1').show();
   var randName = [];
   do {
     randName[randName.length] = cult.splice(
@@ -278,7 +307,9 @@ $('.selected').hide();
 }
 // Hvis activity kategori er valgt i slot1
 if (selectedCat1 == 4){
-
+  $('#drop1').hide();
+  $('#chk1').show();
+  $('#lbl1').show();
   var randName = [];
   do {
     randName[randName.length] = activity.splice(
@@ -295,7 +326,9 @@ $('.selected').hide();
 
 // Hvis bar kategori er valgt i slot2
 if (selectedCat2 == 1 ){
-
+  $('#drop2').hide();
+  $('#chk2').show();
+  $('#lbl2').show();
   var randName = [];
   do {
     randName[randName.length] = bars.splice(
@@ -311,7 +344,9 @@ $('.selected').hide();
 
 // Hvis food kategori er valgt i slot2
 if (selectedCat2 == 2){
-
+  $('#drop2').hide();
+  $('#chk2').show();
+  $('#lbl2').show();
   var randName = [];
   do {
     randName[randName.length] = food.splice(
@@ -327,7 +362,9 @@ $('.selected').hide();
 
 // Hvis culture kategori er valgt i slot2
 if (selectedCat2 == 3){
-
+  $('#drop2').hide();
+  $('#chk2').show();
+  $('#lbl2').show();
   var randName = [];
   do {
     randName[randName.length] = cult.splice(
@@ -341,7 +378,9 @@ $('.selected').hide();
 }
 // Hvis activity kategori er valgt i slot2
 if (selectedCat2 == 4){
-
+  $('#drop2').hide();
+  $('#chk2').show();
+  $('#lbl2').show();
   var randName = [];
   do {
     randName[randName.length] = activity.splice(
@@ -358,7 +397,9 @@ $('.selected').hide();
 
 // Hvis bar kategori er valgt i slot3
 if (selectedCat3 == 1 ){
-
+  $('#drop3').hide();
+  $('#chk3').show();
+  $('#lbl3').show();
   var randName = [];
   do {
     randName[randName.length] = bars.splice(
@@ -374,7 +415,9 @@ $('.selected').hide();
 
 // Hvis food kategori er valgt i slot3
 if (selectedCat3 == 2){
-
+$('#drop3').hide();
+$('#chk3').show();
+$('#lbl3').show();
   var randName = [];
   do {
     randName[randName.length] = food.splice(
@@ -390,7 +433,9 @@ $('.selected').hide();
 
 // Hvis culture kategori er valgt i slot3
 if (selectedCat3 == 3){
-
+$('#drop3').hide();
+$('#chk3').show();
+$('#lbl3').show();
   var randName = [];
   do {
     randName[randName.length] = cult.splice(
@@ -404,7 +449,9 @@ $('.selected').hide();
 }
 // Hvis activity kategori er valgt i slot3
 if (selectedCat3 == 4){
-
+$('#drop3').hide();
+$('#chk3').show();
+$('#lbl3').show();
   var randName = [];
   do {
     randName[randName.length] = activity.splice(
@@ -417,6 +464,9 @@ $('.selected').hide();
   console.log(randName);
 }
 });
+
+
+
 
 
 //newsslider - gentagelse, hastighed og hurtig start
