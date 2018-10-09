@@ -134,35 +134,36 @@ function playMovie(){
   };
   if (selectedCat2 == 1){
     slotMovie = '<img src="img/bars2.gif"/>';
-    $('#two').html(slotMovie);
+    setTimeout(function(){ $('#two').html(slotMovie); }, 200);
+
   };
   if (selectedCat2 == 2){
     slotMovie = '<img src="img/foodslot.gif"/>';
-    $('#two').html(slotMovie);
+    setTimeout(function(){ $('#two').html(slotMovie); }, 200);
   };
   if (selectedCat2 == 3){
     slotMovie = '<img src="img/cultslot.gif"/>';
-    $('#two').html(slotMovie);
+    setTimeout(function(){ $('#two').html(slotMovie); }, 200);
   };
   if (selectedCat2 == 4){
     slotMovie = '<img src="img/actslot.gif"/>';
-    $('#two').html(slotMovie);
+    setTimeout(function(){ $('#two').html(slotMovie); }, 200);
   };
   if (selectedCat3 == 1){
     slotMovie = '<img src="img/bars2.gif"/>';
-    $('#three').html(slotMovie);
+    setTimeout(function(){ $('#three').html(slotMovie); }, 400);
   };
   if (selectedCat3 == 2){
     slotMovie = '<img src="img/foodslot.gif"/>';
-    $('#three').html(slotMovie);
+    setTimeout(function(){ $('#three').html(slotMovie); }, 400);
   };
   if (selectedCat3 == 3){
     slotMovie = '<img src="img/cultslot.gif"/>';
-    $('#three').html(slotMovie);
+    setTimeout(function(){ $('#three').html(slotMovie); }, 400);
   };
   if (selectedCat3 == 4){
     slotMovie = '<img src="img/actslot.gif"/>';
-    $('#three').html(slotMovie);
+    setTimeout(function(){ $('#three').html(slotMovie); }, 400);
   };
 };
 // Dette er vores randomizer
@@ -171,7 +172,8 @@ $('#randomize').mouseover(function(){
 
 });
 $('#randomize').click(function(){
-  $('#one').html("");
+
+  setTimeout(function(){ $('#one').html(""); }, 400);
   $(this).unbind('mouseleave');
   var food =
   [
