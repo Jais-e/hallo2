@@ -125,7 +125,7 @@ header {
   position: absolute;
   width: 260px;
   bottom: -60px;
-  font-family: BeautySchoolDropoutII;
+  font-family: BeautySchoolDropout;
 }
 ul {
   display: none;
@@ -150,6 +150,8 @@ ul {
   text-shadow: 0 0 1px #00cccc;
   font-size: 30px;
 }
+
+.show {display: block;}
 
 /*newslider*/
 .marquee {
