@@ -121,7 +121,7 @@ header {
 }
 
 /* Kategorivalg */
-#dropdown {
+.dropdown {
   position: absolute;
   width: 260px;
   bottom: -60px;
@@ -144,7 +144,7 @@ ul {
   left: -40px;
 }*/
 
-#dropdown a {
+.dropdown a {
   text-decoration: none;
   color: #339999;
   text-shadow: 0 0 1px #00cccc;

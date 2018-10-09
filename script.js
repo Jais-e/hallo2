@@ -16,7 +16,7 @@ var image = document.getElementById("logo");
 var selectedCat1;
 var selectedCat2;
 var selectedCat3;
-function toggleMenu(){
+/*function toggleMenu(){
   document.getElementById('cat1').classList.toggle("show");
   return false;
 }
@@ -27,68 +27,100 @@ function toggleMenu2(){
 function toggleMenu3(){
   document.getElementById('cat3').classList.toggle("show");
   return false;
-}
+}*/
+$('#drop1').click(function(){
+  $('#cat1').show();
+})
+$('#drop2').click(function(){
+  $('#cat2').show();
+})
+$('#drop3').click(function(){
+  $('#cat3').show();
+})
 $('#btn1').click(function(){
   selectedCat1 =1;
-  $('#title1').html('<img src="img/beerlogo.png">');
+  $('#one').html('<img src="img/beerlogo1.png">');
+  $('#cat1').hide();
   console.log(selectedCat1);
   return false;
 });
 $('#btn2').click(function(){
+  $('#one').html('<img src="img/burger.png">');
   selectedCat1 =2;
+  $('#cat1').hide();
   console.log(selectedCat1);
   return false;
 });
 $('#btn3').click(function(){
+  $('#one').html('<img src="img/kultur.png">');
   selectedCat1 =3;
+  $('#cat1').hide();
   console.log(selectedCat1);
   return false;
 });
 $('#btn4').click(function(){
+  $('#one').html('<img src="img/activity.png">');
   selectedCat1 =4;
+  $('#cat1').hide();
   console.log(selectedCat1);
   return false;
 });
 
 
 $('#btn5').click(function(){
+  $('#two').html('<img src="img/beerlogo1.png">');
   selectedCat2 =1;
+  $('#cat2').hide();
   console.log(selectedCat1);
   return false;
 });
 $('#btn6').click(function(){
+  $('#two').html('<img src="img/burger.png">');
   selectedCat2 =2;
+  $('#cat2').hide();
   console.log(selectedCat1);
   return false;
 });
 $('#btn7').click(function(){
+    $('#two').html('<img src="img/kultur.png">');
   selectedCat2 =3;
+  $('#cat2').hide();
   console.log(selectedCat1);
   return false;
 });
 $('#btn8').click(function(){
+  $('#two').html('<img src="img/activity.png">');
   selectedCat2 =4;
+  $('#cat2').hide();
   console.log(selectedCat1);
   return false;
 });
 
 $('#btn9').click(function(){
+  $('#three').html('<img src="img/beerlogo1.png">');
   selectedCat3 =1;
+  $('#cat3').hide();
   console.log(selectedCat1);
   return false;
 });
 $('#btn10').click(function(){
+  $('#three').html('<img src="img/burger.png">');
   selectedCat3 =2;
+  $('#cat3').hide();
   console.log(selectedCat1);
   return false;
 });
 $('#btn11').click(function(){
+  $('#three').html('<img src="img/kultur.png">');
   selectedCat3 =3;
+  $('#cat3').hide();
   console.log(selectedCat1);
   return false;
 });
 $('#btn12').click(function(){
+  $('#three').html('<img src="img/activity.png">');
   selectedCat3 =4;
+  $('#cat3').hide();
   console.log(selectedCat1);
   return false;
 });
