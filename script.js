@@ -3,7 +3,7 @@
 
 var image = document.getElementById("logo");
             var currentPos = 0;
-            var images = ['img/logo-all-glow.png', 'img/logo-no-glow1.png', 'img/logo-no-glow2.png','img/logo-no-glow3.png','img/logo-no-glow4.png', 'img/logo-off-letter1.png', 'img/logo-off-letter2.png' ]
+            var images = ['img/logo-on.png', 'img/logo-no-glow1.png', 'img/logo-no-glow2.png', 'img/logo-off-letter1.png', 'img/logo-off-letter2.png', 'img/logo-off5.png', 'img/logo-off6.png', 'img/logo-on1.png', ]
 
             function change() {
 
