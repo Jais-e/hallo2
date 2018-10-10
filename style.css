@@ -54,7 +54,7 @@ ul{
   background: #222222;
 }
 
-/* billede ig beskrivelser af steder */
+/* billede og beskrivelser af steder */
 .holder {
   position: relative;
   height: 430px;
@@ -89,6 +89,25 @@ ul{
   height: 830px;
 }
 
+/*Startside*/
+
+.startside {position: absolute;
+  width: 1080px;
+}
+
+.logostart {display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+padding-top: 50px;}
+
+#begin {
+font-family: BeautySchoolDropout;
+font-size: 3em;
+text-align: center;
+color: #339999;
+text-shadow: 0 0 1px #00cccc;}
+
 .slots {
   position: relative;
   text-align: center;
@@ -102,6 +121,7 @@ ul{
 }
 
 .slot {
+  display: none;
   position: relative;
   margin: 0 10px 50px 10px;
   flex-basis: 260px;
@@ -268,6 +288,7 @@ label{
 }
 /* Randomize knap */
 #randomize {
+  display: none;
   position: absolute;
   bottom: -450px;
   left: 340px;
