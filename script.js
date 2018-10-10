@@ -27,6 +27,7 @@ function startTheMachine(){
     $('#step1').fadeIn(1000).show();
 
 };
+
 $('#startover').click(function(){
   location.reload();
 });
@@ -227,6 +228,7 @@ $('body').keydown(function(e){
   if (e.keyCode == 90 && selectedCat1 > 0 || selectedCat2 > 0 || selectedCat3 > 0){
   $('.dropdown').hide();
   $('#step4').hide();
+  $('#startover').hide();
   $('#step2').fadeOut(1000).hide();
   $('#step3').fadeIn(1000).show();
   playMovie();
