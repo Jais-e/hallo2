@@ -20,8 +20,7 @@ var selectedCat3 =0;
 
 
 
-// Dropdown menuer
-
+ // <editor-fold> Dropdown menuer
 $('#drop1').click(function(){
   $('#cat1').show();
 })
@@ -116,7 +115,7 @@ $('#btn12').click(function(){
   console.log(selectedCat1);
   return false;
 });
-
+// </editor-fold> Dropdown menuer
 // Valg af video der afspilles i slots
 function playMovie(){
 
@@ -171,15 +170,19 @@ function playMovie(){
     setTimeout(function(){ $('#three').html(slotMovie); }, 400);
   };
 };
-// Dette er vores randomizer
+
+// Afspil animation ved løft af telefonrør/mouseover
 $('#randomize').mouseover(function(){
   playMovie();
 
 });
+
+// Dette er vores randomizer
 $('#randomize').click(function(){
   $(this).unbind('mouseleave');
 
-  // Kategori arrays
+//  <editor-fold> Kategori arrays
+
   var food =
   [
   ["<img src='img/alibaba.jpg'/>", "<h3>Ali Baba<br/>", "<p>Stop any person from Aarhus and ask about Ali Baba and they'll let you know how they serve the greatest drunk food in the city. Whether you want a slice of pizza or a kebab or a pita this is the place to go. <br></p><span class='adress'>Vestergade 6B<br/>8000 Aarhus C</span>"],
@@ -208,9 +211,9 @@ $('#randomize').click(function(){
   ["<img src='img/dyrehaven.jpg'/>", "<h3>Dyrehaven</h3>", "<p>In Dyrehaven you can meet deers up close and feed them carrots or apples. You can also see wild boar through a fence and talk a walk along the beach nearby. Keep in mind the animals are wild, not pets. <br></p><span class='adress'>Ørneredevej 6<br/>8270 Højbjerg</span>"],
   ["<img src='img/boulders.jpg'/>", "<h3>Aarhus Boulders</h3>", "<p>In bouldering you climb up to 4.5 meters high walls with no harness or other equipment. Aarhus Boulders is for everyone - whether you've climbed a hundred times or never before. <br></p><span class='adress'>Graham Bells vej 18A<br/>8200 Aarhus N</span>"]
   ];
+// </editor-fold> Kategori arrays
 
-
-  // Hvis bar kategori er valgt i slot1, 2 og 3
+  // <editor-fold> Hvis bar kategori er valgt i slot1, 2 og 3
   if (selectedCat1 == 1 && selectedCat2 == 1 && selectedCat3 == 1 ){
     $('#drop1').hide();
     $('#drop2').hide();
@@ -234,7 +237,6 @@ $('#randomize').click(function(){
   $('.selected').hide();
     console.log(randName);
   }
-
 
   // Hvis food kategori er valgt i slot1, 2 og 3
   if (selectedCat1 == 2 && selectedCat2 == 2 && selectedCat3 == 2){
@@ -309,9 +311,9 @@ $('#randomize').click(function(){
   $('.selected').hide();
     console.log(randName);
   }
+// </editor-fold> Hvis bar kategori er valgt i slot1, 2 og 3
 
-
-// SLOT1
+// <editor-fold> SLOT1
 
 // Hvis bar kategori er valgt i slot1
 if (selectedCat1 == 1 && $('#chk1').prop('checked') != true){
@@ -381,7 +383,7 @@ $('select').hide();
 $('.selected').hide();
   console.log(randName);
 }
-
+// </editor-fold> SLOT1
 // SLOT2
 
 // Hvis bar kategori er valgt i slot2
