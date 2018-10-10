@@ -19,7 +19,10 @@ var selectedCat2 =0;
 var selectedCat3 =0;
 
 var keyUp = true;
-
+function startTheMachine(){
+    $('.startside').hide();
+    $('.slot').fadeIn(1000).show();
+};
 
  // <editor-fold> Dropdown menuer
 $('#drop1').click(function(){
