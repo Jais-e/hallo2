@@ -150,15 +150,16 @@ label{
 .dropdown {
   position: absolute;
   width: 260px;
-  bottom: -60px;
+  bottom: 20px;
   font-family: BeautySchoolDropout;
   letter-spacing: 3px;
+  z-index: 999999999999999999999;
 }
 .buttons {
   display: none;
   list-style: none;
   position: absolute;
-  bottom: -260px;
+  bottom: -280px;
   left: -40px;
   width: 260px;
   line-height: 60px;
@@ -221,7 +222,7 @@ label{
   position: relative;
   width: 100%;
   height: 500px;
-  bottom: -74px;
+  bottom: 0;
   color: #fff;
   background: url('img/ramme-bund.png') center no-repeat;
   background-position:  120px 100px;
@@ -258,9 +259,16 @@ label{
   font-family: 'Codystar', cursive;
   font-weight: 800;
 }
-
+.choose-cat{
+  padding-top: 150px;
+  font-size: 40px;
+  font-family: BeautySchoolDropout;
+  color: #F8BB14;
+  letter-spacing: 1px;
+}
 /* Randomize knap */
 #randomize {
+  display: none;
   position: absolute;
   bottom: -450px;
   left: 340px;

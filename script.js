@@ -18,6 +18,7 @@ var selectedCat1 =0;
 var selectedCat2 =0;
 var selectedCat3 =0;
 
+var keyUp = true;
 
 
  // <editor-fold> Dropdown menuer
@@ -120,66 +121,76 @@ $('#btn12').click(function(){
 function playMovie(){
 
   var slotMovie;
-  if (selectedCat1 == 1 && $('#chk1').prop('checked') != true){
+  if (selectedCat1 == 1 && $('#chk1').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/bars2.gif"/>';
     $('#one').html(slotMovie);
   };
-  if (selectedCat1 == 2 && $('#chk1').prop('checked') != true){
+  if (selectedCat1 == 2 && $('#chk1').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/foodslot.gif"/>';
     $('#one').html(slotMovie);
   };
-  if (selectedCat1 == 3 && $('#chk1').prop('checked') != true){
+  if (selectedCat1 == 3 && $('#chk1').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/cultslot.gif"/>';
     $('#one').html(slotMovie);
   };
-  if (selectedCat1 == 4 && $('#chk1').prop('checked') != true){
+  if (selectedCat1 == 4 && $('#chk1').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/actslot.gif"/>';
     $('#one').html(slotMovie);
   };
-  if (selectedCat2 == 1 && $('#chk2').prop('checked') != true){
+  if (selectedCat2 == 1 && $('#chk2').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/bars2.gif"/>';
-    setTimeout(function(){ $('#two').html(slotMovie); }, 200);
+    setTimeout(function(){ $('#two').html(slotMovie); }, 200 && keyUp == true);
 
   };
-  if (selectedCat2 == 2 && $('#chk2').prop('checked') != true){
+  if (selectedCat2 == 2 && $('#chk2').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/foodslot.gif"/>';
-    setTimeout(function(){ $('#two').html(slotMovie); }, 200);
+    setTimeout(function(){ $('#two').html(slotMovie); }, 200 && keyUp == true);
   };
-  if (selectedCat2 == 3 && $('#chk2').prop('checked') != true){
+  if (selectedCat2 == 3 && $('#chk2').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/cultslot.gif"/>';
-    setTimeout(function(){ $('#two').html(slotMovie); }, 200);
+    setTimeout(function(){ $('#two').html(slotMovie); }, 200 && keyUp == true);
   };
-  if (selectedCat2 == 4 && $('#chk2').prop('checked') != true){
+  if (selectedCat2 == 4 && $('#chk2').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/actslot.gif"/>';
-    setTimeout(function(){ $('#two').html(slotMovie); }, 200);
+    setTimeout(function(){ $('#two').html(slotMovie); }, 200 && keyUp == true);
   };
-  if (selectedCat3 == 1 && $('#chk3').prop('checked') != true){
+  if (selectedCat3 == 1 && $('#chk3').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/bars2.gif"/>';
-    setTimeout(function(){ $('#three').html(slotMovie); }, 400);
+    setTimeout(function(){ $('#three').html(slotMovie); }, 400 && keyUp == true);
   };
-  if (selectedCat3 == 2 && $('#chk3').prop('checked') != true){
+  if (selectedCat3 == 2 && $('#chk3').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/foodslot.gif"/>';
-    setTimeout(function(){ $('#three').html(slotMovie); }, 400);
+    setTimeout(function(){ $('#three').html(slotMovie); }, 400 && keyUp == true);
   };
-  if (selectedCat3 == 3 && $('#chk3').prop('checked') != true){
+  if (selectedCat3 == 3 && $('#chk3').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/cultslot.gif"/>';
-    setTimeout(function(){ $('#three').html(slotMovie); }, 400);
+    setTimeout(function(){ $('#three').html(slotMovie); }, 400 && keyUp == true);
   };
-  if (selectedCat3 == 4 && $('#chk3').prop('checked') != true){
+  if (selectedCat3 == 4 && $('#chk3').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/actslot.gif"/>';
-    setTimeout(function(){ $('#three').html(slotMovie); }, 400);
+    setTimeout(function(){ $('#three').html(slotMovie); }, 400 && keyUp == true);
   };
 };
 
 // Afspil animation ved løft af telefonrør/mouseover
-$('#randomize').mouseover(function(){
+$('body').keydown(function(e){
+  if (e.keyCode == 17);
+  keyUp = true;
+  $('.dropdown').hide();
   playMovie();
-
 });
 
+/* $('#randomize').mouseover(function(){
+  playMovie();
+
+});*/
+
 // Dette er vores randomizer
-$('#randomize').click(function(){
-  $(this).unbind('mouseleave');
+/*$('#randomize').click(function(){
+  $(this).unbind('mouseleave');*/
+  $('body').keyup(function(e){
+    if (e.keyCode == 17);
+    keyUp = false;
 
 //  <editor-fold> Kategori arrays
 
