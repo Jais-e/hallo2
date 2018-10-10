@@ -90,7 +90,24 @@ ul{
 }
 
 /*Startside*/
-
+#startover{
+  cursor: pointer;
+  display: none;
+  width: 200px;
+  position: absolute;
+  bottom: 120px;
+  left: 420px;
+  align-items: center;
+  font-family: BeautySchoolDropout;
+  font-size: 3em;
+  color: #339999;
+  text-shadow: 0 0 1px #00cccc;
+  text-align: center;
+}
+#right-arrow{
+  position: absolute;
+  transform: rotate(-90deg);
+}
 .startside {
   position: absolute;
   width: 1080px;

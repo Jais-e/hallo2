@@ -27,24 +27,27 @@ function startTheMachine(){
     $('#step1').fadeIn(1000).show();
 
 };
-
+$('#startover').click(function(){
+  location.reload();
+});
  // <editor-fold> Dropdown menuer
 $('#drop1').click(function(){
   $('#cat1').show();
 
-})
+});
 $('#drop2').click(function(){
   $('#cat2').show();
 
-})
+});
 $('#drop3').click(function(){
   $('#cat3').show();
 
-})
+});
 $('#btn1').click(function(){
   selectedCat1 =1;
   $('#one').html('<img src="img/beerlogo1.png">');
   $('#cat1').hide();
+
   $('#step1').fadeOut(1000).hide();
   $('#step2').fadeIn(1000).show();
   console.log(selectedCat1);
@@ -54,8 +57,10 @@ $('#btn2').click(function(){
   $('#one').html('<img src="img/burger.png">');
   selectedCat1 =2;
   $('#cat1').hide();
+
   $('#step1').fadeOut(1000).hide();
   $('#step2').fadeIn(1000).show();
+
   console.log(selectedCat1);
   return false;
 });
@@ -63,6 +68,7 @@ $('#btn3').click(function(){
   $('#one').html('<img src="img/kultur.png">');
   selectedCat1 =3;
   $('#cat1').hide();
+
   $('#step1').fadeOut(1000).hide();
   $('#step2').fadeIn(1000).show();
   console.log(selectedCat1);
@@ -72,6 +78,7 @@ $('#btn4').click(function(){
   $('#one').html('<img src="img/activity.png">');
   selectedCat1 =4;
   $('#cat1').hide();
+
   $('#step1').fadeOut(1000).hide();
   $('#step2').fadeIn(1000).show();
   console.log(selectedCat1);
@@ -81,6 +88,7 @@ $('#btn5').click(function(){
   $('#two').html('<img src="img/beerlogo1.png">');
   selectedCat2 =1;
   $('#cat2').hide();
+
   $('#step1').fadeOut(1000).hide();
   $('#step2').fadeIn(1000).show();
   console.log(selectedCat1);
@@ -90,6 +98,7 @@ $('#btn6').click(function(){
   $('#two').html('<img src="img/burger.png">');
   selectedCat2 =2;
   $('#cat2').hide();
+
   $('#step1').fadeOut(1000).hide();
   $('#step2').fadeIn(1000).show();
   console.log(selectedCat1);
@@ -99,6 +108,7 @@ $('#btn7').click(function(){
     $('#two').html('<img src="img/kultur.png">');
   selectedCat2 =3;
   $('#cat2').hide();
+
   $('#step1').fadeOut(1000).hide();
   $('#step2').fadeIn(1000).show();
   console.log(selectedCat1);
@@ -108,6 +118,7 @@ $('#btn8').click(function(){
   $('#two').html('<img src="img/activity.png">');
   selectedCat2 =4;
   $('#cat2').hide();
+
   $('#step1').fadeOut(1000).hide();
   $('#step2').fadeIn(1000).show();
   console.log(selectedCat1);
@@ -118,6 +129,7 @@ $('#btn9').click(function(){
   $('#three').html('<img src="img/beerlogo1.png">');
   selectedCat3 =1;
   $('#cat3').hide();
+
   $('#step1').fadeOut(1000).hide();
   $('#step2').fadeIn(1000).show();
   console.log(selectedCat1);
@@ -127,6 +139,7 @@ $('#btn10').click(function(){
   $('#three').html('<img src="img/burger.png">');
   selectedCat3 =2;
   $('#cat3').hide();
+
   $('#step1').fadeOut(1000).hide();
   $('#step2').fadeIn(1000).show();
   console.log(selectedCat1);
@@ -136,6 +149,7 @@ $('#btn11').click(function(){
   $('#three').html('<img src="img/kultur.png">');
   selectedCat3 =3;
   $('#cat3').hide();
+
   $('#step1').fadeOut(1000).hide();
   $('#step2').fadeIn(1000).show();
   console.log(selectedCat1);
@@ -145,6 +159,7 @@ $('#btn12').click(function(){
   $('#three').html('<img src="img/activity.png">');
   selectedCat3 =4;
   $('#cat3').hide();
+
   $('#step1').fadeOut(1000).hide();
   $('#step2').fadeIn(1000).show();
   console.log(selectedCat1);
@@ -209,14 +224,14 @@ function playMovie(){
 
 // Afspil animation ved løft af telefonrør/mouseover
 $('body').keydown(function(e){
-  if (e.keyCode == 88 && selectedCat1 > 0 || selectedCat2 > 0 || selectedCat3 > 0){
+  if (e.keyCode == 90 && selectedCat1 > 0 || selectedCat2 > 0 || selectedCat3 > 0){
   $('.dropdown').hide();
+  $('#step4').hide();
   $('#step2').fadeOut(1000).hide();
   $('#step3').fadeIn(1000).show();
-
   playMovie();
   keyUp = true;
-}
+};
 });
 
 /* $('#randomize').mouseover(function(){
@@ -228,9 +243,12 @@ $('body').keydown(function(e){
 /*$('#randomize').click(function(){
   $(this).unbind('mouseleave');*/
   $('body').keyup(function(e){
-    if (e.keyCode == 88);{
-    $('#step3').fadeOut(1000).hide();
+    if (e.keyCode == 90 && selectedCat1 > 0 || selectedCat2 > 0 || selectedCat3 > 0){
+    $('#step3').hide();
+    $('#step2').hide();
     $('#step4').fadeIn(1000).show();
+    $('#startover').fadeIn(1000).show();
+
     keyUp = false;
 }
 //  <editor-fold> Kategori arrays
@@ -572,6 +590,7 @@ $('select').hide();
 $('.selected').hide();
 console.log(randName);
 }
+
 });
 
 //newsslider - gentagelse, hastighed og hurtig start
