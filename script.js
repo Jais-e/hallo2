@@ -21,7 +21,9 @@ var selectedCat3 =0;
 var keyUp = true;
 function startTheMachine(){
     $('.startside').hide();
+    $('#intro').hide();
     $('.slot').fadeIn(1000).show();
+    $('#step1').fadeIn(1000).show();
 };
 
  // <editor-fold> Dropdown menuer
