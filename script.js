@@ -17,8 +17,9 @@ var image = document.getElementById("logo");
 var selectedCat1 =0;
 var selectedCat2 =0;
 var selectedCat3 =0;
-
 var keyUp = true;
+
+
 function startTheMachine(){
     $('.startside').hide();
     $('#intro').hide();
@@ -177,12 +178,15 @@ function playMovie(){
   };
 };
 
+
 // Afspil animation ved løft af telefonrør/mouseover
 $('body').keydown(function(e){
-  if (e.keyCode == 17);
-  keyUp = true;
+  if (e.keyCode == 17 && selectedCat1 > 0 || selectedCat2 > 0 || selectedCat3 > 0){
+
   $('.dropdown').hide();
   playMovie();
+  keyUp = true;
+}
 });
 
 /* $('#randomize').mouseover(function(){
@@ -227,9 +231,10 @@ $('body').keydown(function(e){
   ["<img src='img/dyrehaven.jpg'/>", "<h3>Dyrehaven</h3>", "<p>In Dyrehaven you can meet deers up close and feed them carrots or apples. You can also see wild boar through a fence and talk a walk along the beach nearby. Keep in mind the animals are wild, not pets. <br></p><span class='adress'>Ørneredevej 6<br/>8270 Højbjerg</span>"],
   ["<img src='img/boulders.jpg'/>", "<h3>Aarhus Boulders</h3>", "<p>In bouldering you climb up to 4.5 meters high walls with no harness or other equipment. Aarhus Boulders is for everyone - whether you've climbed a hundred times or never before. <br></p><span class='adress'>Graham Bells vej 18A<br/>8200 Aarhus N</span>"]
   ];
-// </editor-fold> Kategori arrays
+// </editor-fold>
 
-  // <editor-fold> Hvis bar kategori er valgt i slot1, 2 og 3
+// <editor-fold> Hvis samme kategori er valgt i slot1, 2 og 3
+  // Hvis bar kategori er valgt i slot1, 2 og 3
   if (selectedCat1 == 1 && selectedCat2 == 1 && selectedCat3 == 1 ){
     $('#drop1').hide();
     $('#drop2').hide();
@@ -327,7 +332,7 @@ $('body').keydown(function(e){
   $('.selected').hide();
     console.log(randName);
   }
-// </editor-fold> Hvis bar kategori er valgt i slot1, 2 og 3
+// </editor-fold>
 
 // <editor-fold> SLOT1
 
@@ -343,10 +348,9 @@ if (selectedCat1 == 1 && $('#chk1').prop('checked') != true){
                                 , 1)[0];
   } while (randName.length < 3);
 $('#one').html(randName[0]);
-
 $('select').hide();
 $('.selected').hide();
-  console.log(randName);
+console.log(randName);
 }
 
 // Hvis food kategori er valgt i slot1
@@ -361,10 +365,9 @@ if (selectedCat1 == 2 && $('#chk1').prop('checked') != true){
                                 , 1)[0];
   } while (randName.length < 3);
 $('#one').html(randName[0]);
-
 $('select').hide();
 $('.selected').hide();
-  console.log(randName);
+console.log(randName);
 }
 
 // Hvis culture kategori er valgt i slot1
@@ -381,7 +384,7 @@ if (selectedCat1 == 3 && $('#chk1').prop('checked') != true){
 $('#one').html(randName[0]);
 $('select').hide();
 $('.selected').hide();
-  console.log(randName);
+console.log(randName);
 }
 // Hvis activity kategori er valgt i slot1
 if (selectedCat1 == 4 && $('#chk1').prop('checked') != true){
@@ -397,7 +400,7 @@ if (selectedCat1 == 4 && $('#chk1').prop('checked') != true){
 $('#one').html(randName[0]);
 $('select').hide();
 $('.selected').hide();
-  console.log(randName);
+console.log(randName);
 }
 // </editor-fold> SLOT1
 // SLOT2
@@ -414,10 +417,9 @@ if (selectedCat2 == 1 && $('#chk2').prop('checked') != true){
                                 , 1)[0];
   } while (randName.length < 3);
 $('#two').html(randName[0]);
-
 $('select').hide();
 $('.selected').hide();
-  console.log(randName);
+console.log(randName);
 }
 
 // Hvis food kategori er valgt i slot2
@@ -432,10 +434,9 @@ if (selectedCat2 == 2 && $('#chk2').prop('checked') != true){
                                 , 1)[0];
   } while (randName.length < 3);
 $('#two').html(randName[0]);
-
 $('select').hide();
 $('.selected').hide();
-  console.log(randName);
+console.log(randName);
 }
 
 // Hvis culture kategori er valgt i slot2
@@ -452,7 +453,7 @@ if (selectedCat2 == 3 && $('#chk2').prop('checked') != true){
 $('#two').html(randName[0]);
 $('select').hide();
 $('.selected').hide();
-  console.log(randName);
+console.log(randName);
 }
 // Hvis activity kategori er valgt i slot2
 if (selectedCat2 == 4 && $('#chk2').prop('checked') != true){
@@ -468,7 +469,7 @@ if (selectedCat2 == 4 && $('#chk2').prop('checked') != true){
 $('#two').html(randName[0]);
 $('select').hide();
 $('.selected').hide();
-  console.log(randName);
+console.log(randName);
 }
 
 // SLOT3
@@ -485,10 +486,9 @@ if (selectedCat3 == 1 && $('#chk3').prop('checked') != true){
                                 , 1)[0];
   } while (randName.length < 3);
 $('#three').html(randName[0]);
-
 $('select').hide();
 $('.selected').hide();
-  console.log(randName);
+console.log(randName);
 }
 
 // Hvis food kategori er valgt i slot3
@@ -503,10 +503,9 @@ $('#lbl3').show();
                                 , 1)[0];
   } while (randName.length < 3);
 $('#three').html(randName[0]);
-
 $('select').hide();
 $('.selected').hide();
-  console.log(randName);
+console.log(randName);
 }
 
 // Hvis culture kategori er valgt i slot3
@@ -523,7 +522,7 @@ $('#lbl3').show();
 $('#three').html(randName[0]);
 $('select').hide();
 $('.selected').hide();
-  console.log(randName);
+console.log(randName);
 }
 // Hvis activity kategori er valgt i slot3
 if (selectedCat3 == 4 && $('#chk3').prop('checked') != true){
@@ -539,13 +538,9 @@ $('#lbl3').show();
 $('#three').html(randName[0]);
 $('select').hide();
 $('.selected').hide();
-  console.log(randName);
+console.log(randName);
 }
 });
-
-
-
-
 
 //newsslider - gentagelse, hastighed og hurtig start
 
