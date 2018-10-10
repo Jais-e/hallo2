@@ -25,6 +25,7 @@ function startTheMachine(){
     $('#intro').hide();
     $('.slot').fadeIn(1000).show();
     $('#step1').fadeIn(1000).show();
+
 };
 
  // <editor-fold> Dropdown menuer
@@ -145,44 +146,43 @@ function playMovie(){
   };
   if (selectedCat2 == 1 && $('#chk2').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/bars2.gif"/>';
-    setTimeout(function(){ $('#two').html(slotMovie); }, 200 && keyUp == true);
+    setTimeout(function(){ $('#two').html(slotMovie); }, 400 && keyUp == true);
 
   };
   if (selectedCat2 == 2 && $('#chk2').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/foodslot.gif"/>';
-    setTimeout(function(){ $('#two').html(slotMovie); }, 200 && keyUp == true);
+    setTimeout(function(){ $('#two').html(slotMovie); }, 400 && keyUp == true);
   };
   if (selectedCat2 == 3 && $('#chk2').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/cultslot.gif"/>';
-    setTimeout(function(){ $('#two').html(slotMovie); }, 200 && keyUp == true);
+    setTimeout(function(){ $('#two').html(slotMovie); }, 400 && keyUp == true);
   };
   if (selectedCat2 == 4 && $('#chk2').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/actslot.gif"/>';
-    setTimeout(function(){ $('#two').html(slotMovie); }, 200 && keyUp == true);
+    setTimeout(function(){ $('#two').html(slotMovie); }, 400 && keyUp == true);
   };
   if (selectedCat3 == 1 && $('#chk3').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/bars2.gif"/>';
-    setTimeout(function(){ $('#three').html(slotMovie); }, 400 && keyUp == true);
+    setTimeout(function(){ $('#three').html(slotMovie); }, 600 && keyUp == true);
   };
   if (selectedCat3 == 2 && $('#chk3').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/foodslot.gif"/>';
-    setTimeout(function(){ $('#three').html(slotMovie); }, 400 && keyUp == true);
+    setTimeout(function(){ $('#three').html(slotMovie); }, 600 && keyUp == true);
   };
   if (selectedCat3 == 3 && $('#chk3').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/cultslot.gif"/>';
-    setTimeout(function(){ $('#three').html(slotMovie); }, 400 && keyUp == true);
+    setTimeout(function(){ $('#three').html(slotMovie); }, 600 && keyUp == true);
   };
   if (selectedCat3 == 4 && $('#chk3').prop('checked') != true && keyUp == true){
     slotMovie = '<img src="img/actslot.gif"/>';
-    setTimeout(function(){ $('#three').html(slotMovie); }, 400 && keyUp == true);
+    setTimeout(function(){ $('#three').html(slotMovie); }, 600 && keyUp == true);
   };
 };
 
 
 // Afspil animation ved løft af telefonrør/mouseover
 $('body').keydown(function(e){
-  if (e.keyCode == 17 && selectedCat1 > 0 || selectedCat2 > 0 || selectedCat3 > 0){
-
+  if (e.keyCode == 88 && selectedCat1 > 0 || selectedCat2 > 0 || selectedCat3 > 0){
   $('.dropdown').hide();
   playMovie();
   keyUp = true;
@@ -198,7 +198,7 @@ $('body').keydown(function(e){
 /*$('#randomize').click(function(){
   $(this).unbind('mouseleave');*/
   $('body').keyup(function(e){
-    if (e.keyCode == 17);
+    if (e.keyCode == 90);
     keyUp = false;
 
 //  <editor-fold> Kategori arrays
