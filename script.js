@@ -19,7 +19,6 @@ var selectedCat2 =0;
 var selectedCat3 =0;
 var keyUp = true;
 
-
 function startTheMachine(){
     $('.startside').hide();
     $('#intro').hide();
